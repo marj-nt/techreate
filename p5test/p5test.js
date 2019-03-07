@@ -1,4 +1,6 @@
 let y = 100;
+let img;
+let sound;
 
 // The statements in the setup() function
 // execute once when the program begins
@@ -7,6 +9,8 @@ function setup() {
   createCanvas(720, 400);
   stroke(255); // Set line drawing color to white
   frameRate(30);
+  img = loadImage("hamster.png");
+  sound = loadSound("c.wav");
 }
 // The statements in draw() are executed until the
 // program is stopped. Each statement is executed in
@@ -19,4 +23,9 @@ function draw() {
     y = height;
   }
   line(0, y, width, y);
+  image(img, 0, 0);
+}
+
+function mouseClicked() {
+  sound.play();
 }
