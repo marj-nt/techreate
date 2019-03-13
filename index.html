@@ -7,33 +7,165 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="logo"><b>T<span>EC</span>HR<span>EA</span>TE</b></div>
+    <div class="logo hvr-buzz"><b>T<span>EC</span>HR<span>EA</span>TE</b></div>
 
-    <div class="subheader">
-        Personal works intersecting art + technology
+    <div class="subheader container">
+
+        <h2>Personal works intersecting art + technology</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="https://github.com/marj-nt">
+                    <img class="grow" src="css/images/github.png"/>
+                </a>
+            </div>
+            <div class="col">
+                <a href="mailto:marjorientolentino@gmail.com">
+                    <img class="grow" src="css/images/email.png"/>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.linkedin.com/in/mntolent/">
+                    <img class="grow" src="css/images/linkedin.png"/>
+                </a>
+            </div>
+        </div>
+
     </div>
 
-    <div class="programming-container container">
+    <div class="programming-container project-container container">
 
-    </div>
-
-    <div class="design-container container">
+        <div class="row hvr-forward">
+            <div class="col icon-col">
+                <img class="categories-icon" src="css/images/programming.png"/>
+            </div>
+            <div class="col">
+                <h2>Programming Art</h2>
+            </div>
+            
+        </div>
         
+
+        <p>Test description</p>
+
+        <br>
+
+        <div class="row">
+            <div class="col">
+                Autonation
+            </div>
+            <div class="col">
+                Self-Keyboard
+            </div>
+            <div class="col">
+                Tropes
+            </div>
+            <div class="col">
+                VIS 142
+            </div>
+        </div>
     </div>
 
-    <div class="music-container container">
+    <div class="design-container project-container container">
         
+        <div class="row hvr-forward">
+            <div class="col icon-col">
+                <img class="categories-icon" src="css/images/design.png"/>
+            </div>
+            <div class="col">
+                <h2>Design Work</h2>
+            </div>
+            
+        </div>
+
+            <div class="row">
+                <div class="col">
+                    <img class="design-icons" src="css/images/mss.jpg"/>
+                </div>
+                <div class="col">
+                    <img class="design-icons" src="css/images/wordwind.jpg"/>
+                </div>
+                <div class="col">
+                    <img class="design-icons" src="css/images/stayfresh.jpg"/>
+                </div>
+                
+            </div>
     </div>
 
-    <div class="video-container container">
+    <div class="music-container project-container container">
         
+        <div class="row hvr-forward">
+            <div class="col icon-col">
+                <img class="categories-icon" src="css/images/music.png"/>
+            </div>
+            <div class="col">
+                <h2>Music Production</h2>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <video width="320" height="240" autostart="false">
+                    <source src="css/images/flex.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col">
+                <video width="320" height="240" autostart="false">
+                    <source src="css/images/night-owl.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col">
+                Tropes
+            </div>
+            <div class="col">
+                VIS 142
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container project-container container">
+        
+        <div class="row hvr-forward">
+            <div class="col icon-col">
+                <img class="categories-icon" src="css/images/video.png"/>
+            </div>
+            <div class="col">
+                <h2>Video Production</h2>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/x2l_MxCqGzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                Self-Keyboard
+            </div>
+            <div class="col">
+                Tropes
+            </div>
+            <div class="col">
+                VIS 142
+            </div>
+        </div>
     </div>
 
     
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    var video = document.getElementById('video');
+    video.addEventListener('click',function(){
+        video.play();
+    },false);
+    </script>
 </body>
 </html>
