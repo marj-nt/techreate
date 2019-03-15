@@ -263,6 +263,7 @@ dfn::after {
   /* Added by me */
   font-family: "Avenir Next";
   letter-spacing: 0.5em;
+  font-style: normal;
 }
 dfn::before {
   content: '';
