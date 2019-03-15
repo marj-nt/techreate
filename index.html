@@ -12,7 +12,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="logo hvr-buzz"><b>T<span>EC</span>HR<span>EA</span>TE</b></div>
+    <div class="logo hvr-underline-from-center"><b>T<span>EC</span>HR<span>EA</span>TE</b></div>
 
     <div class="subheader container">
 
@@ -20,17 +20,17 @@
 
         <div class="row">
             <div class="col">
-                <a href="https://github.com/marj-nt">
+                <a href="https://github.com/marj-nt" target="_blank">
                     <img class="grow" src="css/images/github.png"/>
                 </a>
             </div>
             <div class="col">
-                <a href="mailto:marjorientolentino@gmail.com">
+                <a href="mailto:marjorientolentino@gmail.com" target="_blank">
                     <img class="grow" src="css/images/email.png"/>
                 </a>
             </div>
             <div class="col">
-                <a href="https://www.linkedin.com/in/mntolent/">
+                <a href="https://www.linkedin.com/in/mntolent/" target="_blank">
                     <img class="grow" src="css/images/linkedin.png"/>
                 </a>
             </div>
@@ -51,7 +51,7 @@
         </div>
         
 
-        <p>Test description</p>
+        <p class="description">Test description</p>
 
         <br>
 
@@ -60,7 +60,9 @@
                 Autonation
             </div>
             <div class="col">
-                Self-Keyboard
+                <a href="a1/index.html" target="_blank">
+                    Self-Keyboard
+                </a>
             </div>
             <div class="col">
                 Tropes
@@ -85,7 +87,9 @@
 
             <div class="row">
                 <div class="col">
+                    <dfn data-info="August 2018 - present">
                     <img class="design-icons" src="css/images/mss.jpg"/>
+                    </dfn>
                 </div>
                 <div class="col">
                     <img class="design-icons" src="css/images/wordwind.jpg"/>
@@ -110,21 +114,24 @@
         </div>
 
         <div class="row">
-            <div class="col">
-                <video width="320" height="240" autostart="false">
+        
+            <div class="container scroll">
+                <video width="320" height="240" autostart="false" class="backvid">
                     <source src="css/images/flex.mp4" type="video/mp4">
                 </video>
-            </div>
-            <div class="col">
+            
+                
+            
                 <video width="320" height="240" autostart="false">
                     <source src="css/images/night-owl.mp4" type="video/mp4">
                 </video>
-            </div>
-            <div class="col">
-                Tropes
-            </div>
-            <div class="col">
-                VIS 142
+            
+            
+                    <iframe width="320" height="240" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340539446&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+           
+                    <iframe width="320" height="240" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243453636&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            
+                
             </div>
         </div>
     </div>
@@ -142,17 +149,26 @@
         </div>
 
         <div class="row">
-            <div class="col">
+
+            
+            
+            <div class="container scroll">
+                
+                
+
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/x2l_MxCqGzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/LLW5_5voKZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/KpJzKfD-VGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/pjM4AlTSUKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col">
-                Self-Keyboard
-            </div>
-            <div class="col">
-                Tropes
-            </div>
-            <div class="col">
-                VIS 142
+
+            <div class="container scroll">
+<!-- 
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/1oMrKk03K_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         -->
             </div>
         </div>
     </div>
@@ -162,10 +178,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-    var video = document.getElementById('video');
-    video.addEventListener('click',function(){
-        video.play();
-    },false);
+    $(document).ready(function() {
+        $(".backvid").show();
+    });
     </script>
 </body>
 </html>
