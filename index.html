@@ -21,16 +21,34 @@
             $(".subheader").toggleClass("hide");
         }
 
-        function showIcons() {
-            console.log("Mouse");
-
-            $(".hidden-icons").toggleClass("show");
+        function showIcons1() {
+            
+            $(".programming-tools").toggleClass("show");
         }
 
-        function vines() {
-            $(".project-container").style.backgroundImage = "/css/images/vines.png";
+        function showIcons2() {
+            
+            $(".design-tools").toggleClass("show");
         }
+
+        function showIcons3() {
+            
+            $(".music-tools").toggleClass("show");
+        }
+
+        function showIcons4() {
+            
+            $(".video-tools").toggleClass("show");
+        }
+
+        
     </script>
+    <style>
+            a:link{
+              text-decoration: none!important;
+              cursor: pointer;
+            }
+            </style>
 </head>
 <body>
     <div class="logo-container container">
@@ -44,7 +62,7 @@
 
     <div class="collapse my-info container" id="collapseExample">
         
-        <div class="row">
+        <div class="row fadeIn">
 
             <div class="col" style="width: 50%;">
                     <img id="me" src="css/images/me.jpg"/>
@@ -103,14 +121,14 @@
 
     <div class="programming-container project-container container">
 
-        <div class="row hvr-forward">
+        <div class="row hvr-forward" onmouseover="showIcons1()" onmouseout="showIcons1()">
             <div class="col icon-col">
                 <img class="categories-icon" src="css/images/programming.png"/>
             </div>
             <div class="col">
-                <h2 onmouseover="showIcons()" onmouseout="showIcons()" onmouseover="vines()">Programming Art</h2>
+                <h2>Programming Art</h2>
 
-                <div class="hidden-icons">
+                <div class="programming-tools hidden-icons">
                     <ul>
                         <li>Processing</li>
                         <li>Pygame</li>
@@ -124,27 +142,52 @@
 
         <div class="row">
             <div class="projects-col col">
-                <a href="https://youtu.be/sytlW4G9h8E" target="_blank">
+                
+                <a class="links" href="https://youtu.be/sytlW4G9h8E" target="_blank" id="auto-link">
                     <div class="parent">
                         <img class="gif" src="css/images/autonation.gif"/>
                         <img class="design-icons" src="css/images/autonation.jpg"/>
+                        
                     </div>
+                    <div class="descr" id="auto-descr">
+                            <h4>Autonation</h4>
+                            <p>Imagine the future in which automation takes over our
+                                relationships, movements, and beliefs.  Augmented reality provides
+                                mass data at a rapid rate. Join Otto on this
+                                short narrative.  Interactivity coming soon.
+                            </p>
+                        </div>
                 </a>
+                
             </div>
             <div class="projects-col col">
-                <a href="a1/index.html" target="_blank">
+                <a class="links" href="a1/index.html" target="_blank" id="piano-link">
                     <div class="parent">
                         <img class="gif" src="css/images/piano.gif"/>
                         <img class="design-icons" src="css/images/piano.png"/>
                     </div>
+                    <div class="descr" id="piano-descr">
+                            <h4>Self Piano</h4>
+                            <p>An interactive piano with letters for each category
+                                <br>
+                                Cartoons, Design, Education, Food, Games, Anxiety,
+                                Ball (Tennis), Candy
+                            </p>
+                        </div>
                 </a>
             </div>
             <div class="projects-col col">
-                <a href="p1/index.html" target="_blank">
+                <a class="links" href="p1/index.html" target="_blank" id="p1-link">
                     <div class="parent">
                         <img class="gif" src="css/images/p1.gif"/>
                         <img class="design-icons" src="css/images/p1.png"/>
                     </div>
+                    <div class="descr" id="p1-descr">
+                            <h4>Brains, Love, and Machines</h4>
+                            <p>Watch as elements of humans + tech materials chase each other
+                                in an entanglement.
+                            </p>
+                        </div>
                 </a>
             </div>
             
@@ -153,12 +196,21 @@
 
     <div class="design-container project-container container">
         
-        <div class="row hvr-forward">
+        <div class="row hvr-forward" onmouseover="showIcons2()" onmouseout="showIcons2()">
             <div class="col icon-col">
                 <img class="categories-icon" src="css/images/design.png"/>
             </div>
+            
             <div class="col">
                 <h2>Design Work</h2>
+
+                <div class="design-tools hidden-icons">
+                    <ul>
+                        <li>Sketch</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
             </div>
             
         </div>
@@ -167,23 +219,45 @@
 
             <div class="row">
                 <div class="projects-col col">
-                    <a href="https://marj-nt.github.io/mss" target="_blank">
+                    <a class="links" href="https://marj-nt.github.io/mss" target="_blank" id="mss-link">
                         <div class="parent">
                             <img class="gif" src="css/images/mss-scroll.gif"/>
                             <img class="design-icons" src="css/images/mss.jpg"/>
                         </div>
+                        <div class="descr" id="mss-descr">
+                                <h4>Mermaid Swim School</h4>
+                                <p>A static mock website promoting local swim business
+                                    in Hanford, California. Deployed on GitHub pages.
+                                </p>
+                            </div>
                     </a>
                 </div>
                 <div class="projects-col col">
-                    <a href="https://invis.io/CBPSLWGP2QR" target="_blank">
-                        <img class="gif" src="css/images/wordwind.gif"/>
-                        <img class="design-icons" src="css/images/wordwind.jpg"/>
+                    <a class="links" href="https://invis.io/CBPSLWGP2QR" target="_blank" id="ww-link">
+                        <div class="parent">
+                            <img class="gif" src="css/images/wordwind.gif"/>
+                            <img class="design-icons" src="css/images/wordwind.jpg"/>
+                        </div>
+                        
+                        <div class="descr" id="ww-descr">
+                                <h4>WordWind</h4>
+                                <p>Mobile app word game testing users ability to read
+                                    words backwards.  Development phase.  UI/UX fleshed out
+                                    on Sketch.
+                                </p>
+                            </div>
                     </a>
                 </div>
                 <div class="projects-col col">
-                    <a href="https://a10-stayfresh.herokuapp.com" target="_blank">
+                    <a class="links" href="https://a10-stayfresh.herokuapp.com" target="_blank" id="sf-link">
                         <img class="gif" src="css/images/stayfresh.gif"/>
                         <img class="design-icons" src="css/images/stayfresh.jpg"/>
+                        <div class="descr" id="sf-descr">
+                                <h4>StayFresh</h4>
+                                <p>Mobile web app to help users track food spoilage, while providing
+                                    variety of recipes.  Prototype/Development phase.
+                                </p>
+                            </div>
                     </a>
                 </div>
                 
@@ -192,12 +266,21 @@
 
     <div class="music-container project-container container">
         
-        <div class="row hvr-forward">
+        <div class="row hvr-forward"  onmouseover="showIcons3()" onmouseout="showIcons3()">
             <div class="col icon-col">
                 <img class="categories-icon" src="css/images/music.png"/>
             </div>
+   
             <div class="col">
                 <h2>Music Production</h2>
+
+                <div class="music-tools hidden-icons">
+                    <ul>
+                        <li>Logic Pro X</li>
+                        <li>Audacity</li>
+                        <li>GridPlay</li>
+                    </ul>
+                </div>
             </div>
             
         </div>
@@ -205,25 +288,53 @@
         <div class="row">
         
             <div class="container scroll">
-                <a href="css/images/flex.mp4">
+                <a href="css/images/flex.mp4" class="links" id="flex-link" target="_blank">
                     
                 <video width="320" height="240" autostart="false">
                     <source src="css/images/flex.mp4" type="video/mp4">
                 </video>
+
+                <div class="descr" id="flex-descr">
+                        <h4>Flex (All In My Head)</h4>
+                        <p>Multi-instrumental cover of Fifth Harmony's 2016 song.
+                            Beat reproduced on Logic Pro X, video collage from GridPlay.
+                        </p>
+                    </div>
                 </a>
+
+                
             
                 
-                <a href="css/images/night-owl.mp4">
+                <a href="css/images/night-owl.mp4" class="links" id="no-link" target="_blank">
                 <video width="320" height="240" autostart="false">
                     <source src="css/images/night-owl.mp4" type="video/mp4">
                 </video>
+                <div class="descr" id="no-descr">
+                        <h4>Night Owl (Multi-instrumental)</h4>
+                        <p>Short, live rendition of original song. (2016)
+                        </p>
+                    </div>
                 </a>
             
-            
+                <a href="#" class="links" id="t30-link">
                     <iframe width="320" height="240" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340539446&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-           
-                    <iframe width="320" height="240" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243453636&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             
+                    <div class="descr" id="t30-descr">
+                            <h4>2:30 A.M. ft. Alice Soung</h4>
+                            <p>First fully produced original track with featuring vocals (2017).  90's-inspired
+                                R&B.
+                            </p>
+                        </div>
+                    </a>
+
+                <a href="#" class="links" id="nos-link">
+                    <iframe width="320" height="240" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243453636&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <div class="descr" id="nos-descr">
+                            <h4>Night Owl</h4>
+                            <p>Instrumental garageband-produced track (2016).  Slow jam / quiet storm genre.
+                            </p>
+                        </div>
+                    </a>
                 
             </div>
         </div>
@@ -231,12 +342,21 @@
 
     <div class="video-container project-container container">
         
-        <div class="row hvr-forward">
+        <div class="row hvr-forward" onmouseover="showIcons4()" onmouseout="showIcons4()">
             <div class="col icon-col">
                 <img class="categories-icon" src="css/images/video.png"/>
             </div>
+
             <div class="col">
                 <h2>Video Production</h2>
+
+                <div class="video-tools hidden-icons">
+                    <ul>
+                        <li>Final Cut Pro X</li>
+                        <li>Gif Brewery 3</li>
+                        <li>Alpha Phi Omega | Media Chair (2018)</li>
+                    </ul>
+                </div>
             </div>
             
         </div>
@@ -248,14 +368,56 @@
             <div class="container scroll">
                 
                 
-
+            <a href="#" class="links" id="nsw-link">
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/x2l_MxCqGzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
+                <div class="descr" id="nsw-descr">
+                        <h4>National Service Week</h4>
+                        <p>2018 focus is "Suicide Prevention in the Community".
+                        </p>
+                    </div>
+                </a>
+
+            <a href="#" class="links" id="ops-link">
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/LLW5_5voKZc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+                <div class="descr" id="ops-descr">
+                        <h4>Operation Santa 2018 Recap</h4>
+                        <p>Recap of Rho Pi chapter's annual relief program to help
+                            spread holiday joy to the greater San Diego community.
+                        </p>
+                    </div>
+                </a>
+
+            <a href="#" class="links" id="bal-link">
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/KpJzKfD-VGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+                <div class="descr" id="bal-descr">
+                        <h4>Big & Little Interviews</h4>
+                        <p>In lieu of sib reveal season, chapter members are interviewed
+                            about their experiences navigating their big and little relationships.
+                        </p>
+                    </div>
+                </a>
+
+            <a href="#" class="links" id="ie-link">
                 <iframe width="400" height="225" src="https://www.youtube.com/embed/pjM4AlTSUKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="descr" id="ie-descr">
+                        <h4>Interview Etiquette</h4>
+                        <p>SpongeBob Parody instructing pledges on appropriate interview behavior.
+                            Be appropriate, professional, and open.
+                        </p>
+                    </div>
+                </a>
+
+            <a href="#" class="links" id="sfv-link">
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/Ltb83-2z-SA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="descr" id="sfv-descr">
+                            <h4>StayFresh</h4>
+                            <p>Promotional video for mobile web app helping users track
+                                food spoilage.
+                            </p>
+                        </div>
+                    </a>
+
+
             </div>
 
             <div class="container scroll">

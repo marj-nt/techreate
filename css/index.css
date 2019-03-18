@@ -1,8 +1,10 @@
 /* https://codepen.io/nodws/pen/bdjwn */
 /* https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
 /* https://github.com/IanLunn/Hover/blob/master/css/hover.css */
+/* https://github.com/daneden/animate.css/blob/master/animate.css */
 
 @import url(//fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou);
+@import url(https://www.fontspace.com/elliott-hefford/vitreous);
 
 @font-face {
   font-family: 'Amethyst';
@@ -124,12 +126,11 @@ body {
   -webkit-transition-property: transform;
   transition-property: transform;
 
-  /* Mine */
-  padding-left: 30px;
+  
 }
 .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
-  -webkit-transform: translateX(-30px);
-  transform: translateX(-30px);
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
   background-repeat: no-repeat;
 }
 
@@ -212,9 +213,10 @@ body {
 
 
 h2 {
-  font-family: "Amethyst";
-  width: 100%;
+  font-family: "ZCOOL QingKe HuangYou";
+  font-size: 30px;
   text-align: left;
+  color: rgb(138, 138, 138);
 
 
 
@@ -253,10 +255,11 @@ h2 {
 
 .hidden-icons {
   display: none;
+  letter-spacing: 1.5px;
 }
 
 .show {
-  display: inline-block;
+  display: flex;
 }
 
 .grow:hover
@@ -270,7 +273,7 @@ h2 {
 }
 
 .project-container {
-  padding: 5vw 0vw;
+  padding: 50px;
   font-family: "ZCOOL QingKe HuangYou";
   letter-spacing: 10px;
 }
@@ -316,8 +319,10 @@ h2 {
 .scroll {
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
 
   padding: 20px 0px;
+  height: 100%;
 
   
 }
@@ -325,10 +330,6 @@ h2 {
 iframe {
   padding: 0px 20px;
   
-}
-
-.backvid {
-  display: none;
 }
 
 .scroll img {
@@ -339,45 +340,149 @@ iframe {
   text-align: center;
 }
 
-dfn::after {
-  content: attr(data-info);
-  /* display: inline;
-  position: absolute;
-  top: 22px; left: 0; */
-  opacity: 0;
-  
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.5em;
-  /* padding: 0.5em 0.8em; */
-  background: rgba(182, 182, 182, 0.5);
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* Descriptions */
+
+.links h4 {
+  color: rgb(95, 184, 147);
+  padding-top: 15px;
+  letter-spacing:1.75px;
+}
+
+
+
+.links p {
   color: black;
-  pointer-events: none; /* This prevents the box from apearing when hovered. */
-  transition: opacity 250ms, top 250ms;
-
-  /* Added by me */
-  font-family: "Avenir Next";
-  letter-spacing: 0.5em;
-  font-style: normal;
+  text-decoration: none;
+  font-family: "Avenir";
+  letter-spacing: 1px;
 }
-dfn::before {
-  content: '';
-  /* display: block;
-  position: absolute;
-  top: 12px; left: 20px; */
+
+
+.descr {
+  visibility: hidden;
   opacity: 0;
-  /* width: 0; height: 0; */
-  border: solid transparent 5px;
-  border-bottom-color: rgba(182, 182, 182, 0.5);
-  transition: opacity 250ms, top 250ms;
+  transition: 0.2s;
+  height: 0;
+  
+  
 }
-dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
-dfn:hover::after,
-dfn:hover::before {opacity: 1;}
-dfn:hover::after {top: 250px;}
-dfn:hover::before {top: 230px;}
+
+#auto-link:hover #auto-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#piano-link:hover #piano-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#p1-link:hover #p1-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#mss-link:hover #mss-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#ww-link:hover #ww-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#flex-link:hover #flex-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#sf-link:hover #sf-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#no-link:hover #no-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#t30-link:hover #t30-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#nos-link:hover #nos-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
 
 
+#nsw-link:hover #nsw-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#ops-link:hover #ops-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#bal-link:hover #bal-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#ie-link:hover #ie-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
+
+#sfv-link:hover #sfv-descr {
+  visibility: visible;
+  height: 50%;
+  opacity: 1.0;
+}
 
 
 
