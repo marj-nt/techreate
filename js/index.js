@@ -1,4 +1,14 @@
-var video = document.getElementById('video');
-video.addEventListener('click',function(){
-    video.play();
-},false);
+'use strict';
+
+$(document).ready(function() {
+    initializePage();
+})
+
+function initializePage() {
+    $(".logo").click(function(e) {
+        console.log("Clicked")
+        e.preventDefault();
+        $("body").toggleClass("active-background");
+
+    })
+}

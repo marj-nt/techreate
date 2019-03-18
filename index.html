@@ -10,9 +10,68 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="main.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        function changeColor() {
+            console.log("Clicked");
+            
+            $("body").toggleClass("active-background");
+            $("h2").toggleClass("active-text");
+            $(".project-container").toggleClass("hide");
+            $(".subheader").toggleClass("hide");
+        }
+
+        function showIcons() {
+            console.log("Mouse");
+
+            $(".hidden-icons").toggleClass("show");
+        }
+    </script>
 </head>
 <body>
-    <div class="logo hvr-underline-from-center"><b>T<span>EC</span>HR<span>EA</span>TE</b></div>
+    <div class="logo-container container">
+            <div class="logo hvr-underline-from-center" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="changeColor()">
+                    <a href="#" style="text-decoration: none;">
+                        <b>T<span>EC</span>HR<span>EA</span>TE</b>
+                    </a>
+                </div>
+    </div>
+    
+
+    <div class="collapse my-info container" id="collapseExample">
+        
+        <div class="row">
+
+            <div class="col" style="width: 50%;">
+                    <img id="me" src="css/images/me.jpg"/>
+            </div>
+
+            <div class="col" style="width: 50%;">
+                    <h3>Hi, my name is Marjorie Tolentino.</h3>
+
+                    <p>I'm a third year undergraduate at UCSD studying
+                        <br>
+                        Human Computer-Interaction with a minor in Computing and
+                        the Arts.
+
+                        <br>
+                        <br>
+
+                        Currently exploring my newfound interests in intuitive design for mobile and web development. 
+
+                        <br>
+                        <br>
+                        In my leisure I love to immerse myself in video games, document my travels, and produce
+                        R&B music.
+                    </p>
+            </div>
+
+        </div>
+
+        
+
+       
+    </div>
 
     <div class="subheader container">
 
@@ -45,14 +104,18 @@
                 <img class="categories-icon" src="css/images/programming.png"/>
             </div>
             <div class="col">
-                <h2>Programming Art</h2>
+                <h2 onmouseover="showIcons()" onmouseout="showIcons()">Programming Art</h2>
+
+                <div class="hidden-icons">
+                    <ul>
+                        <li>Processing</li>
+                        <li>Pygame</li>
+                    </ul>
+                </div>
             </div>
             
         </div>
         
-
-        <p class="description">Test description</p>
-
         <br>
 
         <div class="row">
@@ -85,24 +148,27 @@
             
         </div>
 
+        
+
             <div class="row">
-                <div class="col">
-                    
-                    <dfn data-info="August 2018 - present">
-                        <a href="https://marj-nt.github.io/mss" target="_blank">
+                <div class="projects-col col">
+                    <a href="https://marj-nt.github.io/mss" target="_blank">
+                        <div class="parent">
+                            <img class="gif" src="css/images/mss-scroll.gif"/>
                             <img class="design-icons" src="css/images/mss.jpg"/>
-                        </a>
-                    </dfn>
-                    
-                </div>
-                <div class="col">
-                    <a href="https://invis.io/D8PSADBG4BZ#/338774315_Main_Screen" target="_blank">
-                    <img class="design-icons" src="css/images/wordwind.jpg"/>
+                        </div>
                     </a>
                 </div>
-                <div class="col">
-                    <a href="https://a10-stayfresh.herokuapp.com/" target="_blank">
-                    <img class="design-icons" src="css/images/stayfresh.jpg"/>
+                <div class="projects-col col">
+                    <a href="https://invis.io/CBPSLWGP2QR" target="_blank">
+                        <img class="gif" src="css/images/wordwind.gif"/>
+                        <img class="design-icons" src="css/images/wordwind.jpg"/>
+                    </a>
+                </div>
+                <div class="projects-col col">
+                    <a href="https://a10-stayfresh.herokuapp.com" target="_blank">
+                        <img class="gif" src="css/images/stayfresh.gif"/>
+                        <img class="design-icons" src="css/images/stayfresh.jpg"/>
                     </a>
                 </div>
                 
@@ -188,10 +254,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-    $(document).ready(function() {
-        $(".backvid").show();
-    });
-    </script>
+    
 </body>
 </html>
