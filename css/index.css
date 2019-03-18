@@ -130,7 +130,6 @@ body {
 .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
   -webkit-transform: translateX(-30px);
   transform: translateX(-30px);
-  background-image: url(images/vines.png);
   background-repeat: no-repeat;
 }
 
@@ -281,7 +280,7 @@ h2 {
   height: 50px;
 }
 
-.design-icons, .gif {
+.design-icons, .gif, .programming-icons {
   width: 325px;
 }
 

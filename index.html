@@ -26,6 +26,10 @@
 
             $(".hidden-icons").toggleClass("show");
         }
+
+        function vines() {
+            $(".project-container").style.backgroundImage = "/css/images/vines.png";
+        }
     </script>
 </head>
 <body>
@@ -104,7 +108,7 @@
                 <img class="categories-icon" src="css/images/programming.png"/>
             </div>
             <div class="col">
-                <h2 onmouseover="showIcons()" onmouseout="showIcons()">Programming Art</h2>
+                <h2 onmouseover="showIcons()" onmouseout="showIcons()" onmouseover="vines()">Programming Art</h2>
 
                 <div class="hidden-icons">
                     <ul>
@@ -119,20 +123,31 @@
         <br>
 
         <div class="row">
-            <div class="col">
-                Autonation
-            </div>
-            <div class="col">
-                <a href="a1/index.html" target="_blank">
-                    Self-Keyboard
+            <div class="projects-col col">
+                <a href="https://youtu.be/sytlW4G9h8E" target="_blank">
+                    <div class="parent">
+                        <img class="gif" src="css/images/autonation.gif"/>
+                        <img class="design-icons" src="css/images/autonation.jpg"/>
+                    </div>
                 </a>
             </div>
-            <div class="col">
-                Tropes
+            <div class="projects-col col">
+                <a href="a1/index.html" target="_blank">
+                    <div class="parent">
+                        <img class="gif" src="css/images/piano.gif"/>
+                        <img class="design-icons" src="css/images/piano.png"/>
+                    </div>
+                </a>
             </div>
-            <div class="col">
-                VIS 142
+            <div class="projects-col col">
+                <a href="p1/index.html" target="_blank">
+                    <div class="parent">
+                        <img class="gif" src="css/images/p1.gif"/>
+                        <img class="design-icons" src="css/images/p1.png"/>
+                    </div>
+                </a>
             </div>
+            
         </div>
     </div>
 
@@ -191,7 +206,8 @@
         
             <div class="container scroll">
                 <a href="css/images/flex.mp4">
-                <video width="320" height="240" autostart="false" class="backvid">
+                    
+                <video width="320" height="240" autostart="false">
                     <source src="css/images/flex.mp4" type="video/mp4">
                 </video>
                 </a>

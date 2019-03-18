@@ -124,10 +124,10 @@ function Words(inputX, inputY, inputWord, inputColor, inputSize, inputFont) {
     
     this.theFont = inputFont;
     
-    this.initTime = mill;
+    this.initTime = startTime;
     this.aniTime = 4500;
     
-    this.speed = 1.5
+    this.speed = 1.5;
     
     this.counter = 0;
     
@@ -163,13 +163,14 @@ function Words(inputX, inputY, inputWord, inputColor, inputSize, inputFont) {
           else {
           
             
-            this.initTime = millis();
+            
             this.y = this.y + this.speed*0.5;
             this.fallDir = this.fallDir * -1;
+            initTime = millis();
             
           }
           
-          console.log(this.fallDir);
+          
           
           
         }
