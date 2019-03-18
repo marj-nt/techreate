@@ -12,6 +12,7 @@
     <script src="main.js"></script>
     <script src="js/index.js"></script>
     <script>
+        
         function changeColor() {
             console.log("Clicked");
             
@@ -19,6 +20,14 @@
             $("h2").toggleClass("active-text");
             $(".project-container").toggleClass("hide");
             $(".subheader").toggleClass("hide");
+        }
+
+        function changeWords() {
+            $(".title b").text("ABOUT MARJ");
+            $(".title b").addClass('blink');
+        }
+        function changeBack() {
+            $(".title b").text("TECHREATE");
         }
 
         function showIcons1() {
@@ -53,7 +62,7 @@
 <body>
     <div class="logo-container container">
             <div class="logo hvr-underline-from-center" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="changeColor()">
-                    <a href="#" style="text-decoration: none;">
+                    <a class="title" href="#" style="text-decoration: none;" onmouseover="changeWords()" onmouseout="changeBack()">
                         <b>T<span>EC</span>HR<span>EA</span>TE</b>
                     </a>
                 </div>

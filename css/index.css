@@ -80,6 +80,10 @@ body {
 .logo b span{
   animation: blink linear infinite 2s;
 }
+
+.blink {
+  animation: blink linear infinite 2s;
+}
 @keyframes blink {
   78% {
     color: inherit;
